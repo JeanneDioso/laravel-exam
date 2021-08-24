@@ -22,7 +22,7 @@ Clone the repository
 
 Switch to the repo folder
 
-    cd laravel-examp
+    cd laravel-exam
 
 Install all the dependencies using composer
 
