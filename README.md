@@ -45,3 +45,9 @@ You can now access the server. Example: http://127.0.0.1:8000
     php artisan migrate
     php artisan serve
 
+# Test Endpoints
+
+    /api/auth/register
+    /api/auth/login
+    /api/products/order
+
