@@ -40,7 +40,7 @@ Start the local development server
 
 You can now access the server. Example: http://127.0.0.1:8000
     
-**Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
+**Make sure you set the correct database connection information before running the migrations** 
 
     php artisan migrate
     php artisan serve
