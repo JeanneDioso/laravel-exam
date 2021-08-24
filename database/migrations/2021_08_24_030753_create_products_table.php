@@ -16,8 +16,21 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->stoks();
+            $table->integer('stocks');
         });
+
+        DB::table('products')->insert(
+            array(
+               [
+                'name' => 'beef',
+                'stocks' => 1
+               ],
+               [
+                'name' => 'vegetables',
+                'stocks' => 2
+               ]
+            )
+        );
     }
 
     /**

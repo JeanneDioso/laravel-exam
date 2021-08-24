@@ -4,15 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
-use Illuminate\Support\Facades\Hash;
 use App\Jobs\SendEmailJob;
 use App\Traits\ThrottlesAttempts;
-use Illuminate\Auth\Events\Lockout;
-use Illuminate\Cache\RateLimiter;
 use Carbon\Carbon;
 
 class AuthController extends Controller
